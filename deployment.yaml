@@ -176,7 +176,7 @@ kind: Deployment
 metadata:
   name: adservice
 spec:
-  replicas: 1
+  replicas: @replicas@
   template:
     metadata:
       labels:
@@ -215,7 +215,7 @@ kind: Deployment
 metadata:
   name: cartservice
 spec:
-  replicas: 1
+  replicas: @replicas@
   template:
     metadata:
       labels:
@@ -257,7 +257,7 @@ kind: Deployment
 metadata:
   name: checkoutservice
 spec:
-  replicas: 1
+  replicas: @replicas@
   template:
     metadata:
       labels:
@@ -301,7 +301,7 @@ kind: Deployment
 metadata:
   name: currencyservice
 spec:
-  replicas: 1
+  replicas: @replicas@
   template:
     metadata:
       labels:
@@ -334,7 +334,7 @@ kind: Deployment
 metadata:
   name: emailservice
 spec:
-  replicas: 1
+  replicas: @replicas@
   template:
     metadata:
       labels:
@@ -368,7 +368,7 @@ kind: Deployment
 metadata:
   name: frontend
 spec:
-  replicas: 1
+  replicas: @replicas@
   template:
     metadata:
       labels:
@@ -424,7 +424,7 @@ kind: Deployment
 metadata:
   name: loadgenerator
 spec:
-  replicas: 1
+  replicas: @replicas@
   template:
     metadata:
       labels:
@@ -465,7 +465,7 @@ kind: Deployment
 metadata:
   name: paymentservice
 spec:
-  replicas: 1
+  replicas: @replicas@
   template:
     metadata:
       labels:
@@ -497,7 +497,7 @@ kind: Deployment
 metadata:
   name: productcatalogservice
 spec:
-  replicas: 1
+  replicas: @replicas@
   template:
     metadata:
       labels:
@@ -529,7 +529,7 @@ kind: Deployment
 metadata:
   name: recommendationservice
 spec:
-  replicas: 1
+  replicas: @replicas@
   template:
     metadata:
       labels:
@@ -566,7 +566,7 @@ kind: Deployment
 metadata:
   name: redis-cart
 spec:
-  replicas: 1
+  replicas: @replicas@
   template:
     metadata:
       labels:
@@ -605,7 +605,7 @@ kind: Deployment
 metadata:
   name: shippingservice
 spec:
-  replicas: 1
+  replicas: @replicas@
   template:
     metadata:
       labels:
