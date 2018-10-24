@@ -376,7 +376,7 @@ spec:
     spec:
       containers:
         - name: server
-          image: mycluster.icp:8500/default/frontend:1.0
+          image: mycluster.icp:8500/default/frontend:2.0
           ports:
           - containerPort: 8080
           readinessProbe:
