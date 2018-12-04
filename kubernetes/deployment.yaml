@@ -573,7 +573,7 @@ spec:
     spec:
       containers:
       - name: redis
-        image: k8s.gcr.io/redis:e2e
+        image: redis:alpine
         ports:
         - containerPort: 6379
         readinessProbe:
