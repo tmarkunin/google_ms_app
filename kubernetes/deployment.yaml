@@ -95,8 +95,7 @@ spec:
   ports:
   - name: http
     port: 8080
-    nodePort: 31508
-
+    nodePort: 32308
 
 ---
 apiVersion: v1
