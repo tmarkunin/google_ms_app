@@ -185,7 +185,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: mycluster.icp:8500/default/adservice:1.0
+        image: mycluster.icp:8500/devops/adservice:1.0
         ports:
         - containerPort: 9555
         env:
@@ -224,7 +224,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: mycluster.icp:8500/default/cartservice:1.0
+        image: mycluster.icp:8500/devops/cartservice:1.0
         ports:
         - containerPort: 7070
         env:
@@ -265,7 +265,7 @@ spec:
     spec:
       containers:
         - name: server
-          image: mycluster.icp:8500/default/checkoutservice:1.0
+          image: mycluster.icp:8500/devops/checkoutservice:1.0
           ports:
           - containerPort: 5050
           readinessProbe:
@@ -310,7 +310,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: mycluster.icp:8500/default/currencyservice:1.0
+        image: mycluster.icp:8500/devops/currencyservice:1.0
         ports:
         - name: grpc
           containerPort: 7000
@@ -343,7 +343,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: mycluster.icp:8500/default/emailservice:1.0
+        image: mycluster.icp:8500/devops/emailservice:1.0
         ports:
         - containerPort: 8080
         readinessProbe:
@@ -376,7 +376,7 @@ spec:
     spec:
       containers:
         - name: server
-          image: mycluster.icp:8500/default/frontend:2.0
+          image: mycluster.icp:8500/devops/frontend:2.0
           ports:
           - containerPort: 8080
           readinessProbe:
@@ -445,7 +445,7 @@ spec:
           value: "frontend:80"
       containers:
       - name: main
-        image: mycluster.icp:8500/default/loadgenerator:1.0
+        image: mycluster.icp:8500/devops/loadgenerator:1.0
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
@@ -474,7 +474,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: mycluster.icp:8500/default/paymentservice:1.0
+        image: mycluster.icp:8500/devops/paymentservice:1.0
         ports:
         - containerPort: 50051
         readinessProbe:
@@ -506,7 +506,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: mycluster.icp:8500/default/productcatalogservice:1.0
+        image: mycluster.icp:8500/devops/productcatalogservice:1.0
         ports:
         - containerPort: 3550
         readinessProbe:
@@ -538,7 +538,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: mycluster.icp:8500/default/recommendationservice:1.0
+        image: mycluster.icp:8500/devops/recommendationservice:1.0
         ports:
         - containerPort: 8080
         readinessProbe:
@@ -574,7 +574,7 @@ spec:
     spec:
       containers:
       - name: redis
-        image: redis:alpine
+        image: k8s.gcr.io/redis:e2e
         ports:
         - containerPort: 6379
         readinessProbe:
@@ -613,7 +613,7 @@ spec:
     spec:
       containers:
       - name: server
-        image: mycluster.icp:8500/default/shippingservice:1.0
+        image: mycluster.icp:8500/devops/shippingservice:1.0
         ports:
         - containerPort: 50051
         readinessProbe:
